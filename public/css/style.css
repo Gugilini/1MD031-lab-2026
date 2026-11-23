@@ -1,22 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
-body {
-    font-size: 12pt;
-}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest Guy&family=Cormorant:wght@700&display=swap');
 
+body {
+    font-family: 'Luckiest Guy', cursive, sans-serif;
+    font-size: 12pt;
+    background-color:powderblue;
+}
+ 
 p {
-    color: red;
+    color: whitesmoke; 
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
 }
 
 h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
+    font-size: 52pt;
+    color: firebrick;
+
+    /*Make an outline for the header text*/
+    -webkit-text-stroke: 5px maroon;
+    paint-order: stroke fill;
+    
 }
+
 main, header, footer, nav ul {
-    max-width: 40rem;
+    max-width: 60rem;
     margin: 0 auto 0 auto;
 }
+
 main {
-    background-color: bisque;
+    background-color: peachpuff;
+    border: solid maroon;
 }
 
 /* nav ul li {
@@ -27,19 +40,34 @@ main {
 } */
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+    position: relative; 
+    max-width: 75rem;
     height: 200px;
-    opacity: 0.5;
+    margin: 20px auto; 
+    overflow: hidden; 
+    border: 10px double maroon;
 }
 
 header h1 {
-    width:40rem;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0;
     text-align: center;
+    opacity: 1; /* Stays solid */
 }
+
+
+header img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45; /* Only the image becomes semi-transparent */
+}
+
 
 nav ul {
     display: grid;
@@ -62,3 +90,65 @@ nav li {
     color: green;
     font-weight: bold;
 }
+
+.ingredient{
+    font-weight: bold;
+}
+
+#burgers-section{
+    color: whitesmoke; 
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+    text-align: center;
+
+}
+
+/* Resize the burger images so they fit inside the cards */
+#burgers-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: solid maroon;
+}
+
+#burgers-section h2 {
+    font-size: 4rem; 
+    margin: 16px 0 8px;
+}
+
+button:hover {
+   background-color: lightskyblue;
+   cursor: pointer;
+}
+
+section {
+  margin: 20px;
+  border-bottom: solid maroon;
+  padding: 20px;
+}
+
+button {
+  display: block;
+  margin: 15px auto 0; 
+}
+
+button img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* or e.g. 33.33% 33.33% 33.33% */
+    gap: 15px; /* or grid-gap: 15px; */
+}
+
+ .box {
+     background-color: papayawhip;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 150%;
+     border: 3px solid maroon;
+ }
+

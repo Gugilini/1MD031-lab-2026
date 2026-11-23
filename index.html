@@ -1,132 +1,131 @@
 <!DOCTYPE HTML>
 <html lang="en">
    <head>
+       <link rel="stylesheet" type="text/css" href="/css/style.css">
        <title>Page title shown in window title</title>
        <meta charset="utf-8"/>
    </head>
 
-   
    <body>
         <header>
+            <img src="/img/Spongebobbackground.png" alt="Header background">
             <h1>Welcome to The Krusty Krab</h1>
         </header>
 
         <main>
-            
-        <section>
+        <section id="burgers-section">
             <h2>Select burger</h2>
             <p>This is where you execute burger selection</p>
-            <div style="display: inline-block; width: 250px; box-sizing: border-box; vertical-align: top; margin: 10px; padding: 15px;";>
-            <h3>Krabby Patty</h3>
-            <img src="/img/KrabbyPatty.png" alt="krabbypatty" style="width: 250px">
 
-            <dl>
-                <dd>The legendary treasure of the deep blue sea! Layered with melting cheese, crisp lettuce, and top-secret signature sauce.</dd>
-            </dl>
+            <div class="wrapper">
+                <div class ="box">
+                    <h3>Krabby Patty</h3>
+                    <img src="/img/KrabbyPatty.png" alt="krabbypatty">
 
-            <ul>
-                <li>750 kCal</li>
-                <li>Contains lactose</li>
-                <li>Contains gluten</li>
-            </ul>
+                    <dl>
+                        <dd>The legendary treasure of the deep blue sea! Layered with melting cheese, crisp lettuce, and top-secret signature sauce.</dd>
+                    </dl>
 
-            </div>
+                    <ul>
+                        <li>750 kCal</li>
+                        <li>Contains <span class="ingredient">lactose</span></li>
+                        <li>Contains <span class="ingredient">gluten</span></li>
+                    </ul>
+                </div>
 
-            <div style="display: inline-block; width: 250px; box-sizing: border-box; vertical-align: top; margin: 10px; padding: 15px;">
-            <h3>The Barnacle Burger</h3>
-            <img src="/img/TheBarnacleBurger.png" alt="barnacleburger" style="width: 250px">
+                <div class ="box">
+                    <h3>The Barnacle Burger</h3>
+                    <img src="/img/TheBarnacleBurger.png" alt="barnacleburger">
 
-             <dl>
-                <dd>Loaded for a high-tide appetite! This rugged masterpiece features a hearty beef patty topped with a mountain of golden, crispy deep-fried onion strings (the finest barnacles this side of the ocean), sharp melted cheddar, and a tangy kick of Trench Tartar sauce.</dd>
-            </dl>
+                    <dl>
+                        <dd>Loaded for a high-tide appetite! This rugged masterpiece features a hearty beef patty topped with a mountain of golden, crispy deep-fried onion strings (the finest barnacles this side of the ocean), sharp melted cheddar, and a tangy kick of Trench Tartar sauce.</dd>
+                    </dl>
 
-            <ul>
-                <li>950 kCal</li>
-                <li>Contains lactose</li>
-                <li>Contains gluten</li>
-            </ul>
-            </div>
+                    <ul>
+                        <li>950 kCal</li>
+                        <li>Contains <span class="ingredient">lactose</span></li>
+                        <li>Contains <span class="ingredient">gluten</span></li>
+                    </ul>
+                </div>
 
-            <div style="display: inline-block; width: 250px; box-sizing: border-box; vertical-align: top; margin: 10px; padding: 15px;">
-            <h3>The Salty Sailor Slider</h3>
-            <img src="/img/TheSaltySailorSlider.png" alt="saltysailorslider" style="width: 250px">
+                <div class ="box">
+                    <h3>The Salty Sailor Slider</h3>
+                    <img src="/img/TheSaltySailorSlider.png" alt="saltysailorslider">
 
-             <dl>
-                <dd>Small in size, but mighty in flavor! A trio of savory sliders stacked high with melted Swiss cheese, smoky bacon, and a daring splash of zesty Abyss Aioli. Perfect for sailors who like a little danger with dinner.</dd>
-            </dl>
+                    <dl>
+                        <dd>Small in size, but mighty in flavor! A trio of savory sliders stacked high with melted Swiss cheese, smoky bacon, and a daring splash of zesty Abyss Aioli. Perfect for sailors who like a little danger with dinner.</dd>
+                    </dl>
 
-            <ul>
-                <li>880 kCal</li>
-                <li>Contains lactose</li>
-                <li>Contains gluten</li>
-            </ul>
+                    <ul>
+                        <li>880 kCal</li>
+                        <li>Contains <span class="ingredient">lactose</span></li>
+                        <li>Contains <span class="ingredient">gluten</span></li>
+                    </ul>
+                </div>
             </div>
         </section>
         
-         <section>
+        <section id="order-section">
             <h3>Customer information</h3>
             <p>This is where you provide necessary information</p>
             <h4>Delivery information</h4>
 
             <p>
-            <label for="full name">Full name</label><br>
-            <input type="text" id="fullname" name="fn" required="required" placeholder="Full name">
-            </p>
-
-             <p>
-            <label for="E.mail">E-mail</label><br>
-            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                <label for="fullname">Full name</label><br>
+                <input type="text" id="fullname" name="fn" required="required" placeholder="Full name">
             </p>
 
             <p>
-            <label for="Street">Street</label><br>
-            <input type="text" id="Street" name="ln" placeholder="Street">
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+            </p>
+
+            <p>
+                <label for="street">Street</label><br>
+                <input type="text" id="street" name="ln" placeholder="Street">
             </p>
                 
             <p>
-            <label for="House">House</label><br>
-            <input type="number" id="House" name="ln" placeholder="House">
+                <label for="House">House</label><br>
+                <input type="number" id="House" name="ln" placeholder="House">
             </p>
 
             <p>Payment options</p>
             
             <p>
-            <select id="recipient" name="rcp">
-            <option>Card</option>
-            <option>Cash</option>
-            <option>Check</option>
-            </select>
+                <select id="recipient" name="rcp">
+                    <option>Card</option>
+                    <option>Cash</option>
+                    <option>Check</option>
+                </select>
             </p>
 
-            <h4>Gender</h4>
+            <h3>Gender</h3>
             <p>
-                <input type = "radio" id = "male" name = "gender" value = "male">
+                <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
 
-                <input type = "radio" id = "female" name = "gender" value = "female">
+                <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
 
-                <input type = "radio" id = "nonbinary" name = "gender" value = "non-binary">
+                <input type="radio" id="nonbinary" name="gender" value="non-binary">
                 <label for="nonbinary">Non-binary</label><br>
 
-                <input type = "radio" id = "undisclosed" name = "gender" value = "undisclosed">
+                <input type="radio" id="undisclosed" name="gender" value="undisclosed">
                 <label for="undisclosed">Undisclosed</label><br>
-
             </p>
-
 
             <p>
-            <button type="submit">
-                <img src="/img/PlaceMyOrder.png" alt="Burger Icon" style="width: 200px;">
-            </button>
+                <button type="submit">
+                    <img src="/img/PlaceMyOrder.png" alt="Burger Icon">
+                </button>
             </p>
-           
-         </section>
-    </main>
+        </section>
+        </main>
 
-    <hr>
-    <footer>
-        End notes
-    </footer>
+        <hr>
+        <footer>
+            End notes
+        </footer>
    </body>
 </html>
